@@ -4,6 +4,7 @@ export default StyleSheet.create({
   H1: {
     fontSize: 30,
     fontWeight: 'bold',
+    textAlign: 'center',
   },
   H2: {
     fontSize: 25,
