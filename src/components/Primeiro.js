@@ -1,10 +1,7 @@
 import React from 'react';
-import {SafeAreaView, Text} from 'react-native';
+import {Text} from 'react-native';
+import Style from './style';
 
 export default () => {
-  return (
-    <SafeAreaView>
-      <Text> Texto dentro do componente</Text>
-    </SafeAreaView>
-  );
+  return <Text style={Style.H1}> Text grande</Text>;
 };

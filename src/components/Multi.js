@@ -1,26 +1,30 @@
 import React from 'react';
 import {SafeAreaView, Text} from 'react-native';
+import Style from './style';
 
-export default () => {
+function Comp() {
   return (
     <SafeAreaView>
-      <Text> Main comp </Text>
-    </SafeAreaView>
-  );
-};
-
-export function Comp1() {
-  return (
-    <SafeAreaView>
-      <Text> Comp 1 </Text>
+      <Text style={Style.H3}> Main comp </Text>
     </SafeAreaView>
   );
 }
 
-export function Comp2() {
+function Comp1() {
   return (
     <SafeAreaView>
-      <Text> Comp 2 </Text>
+      <Text style={Style.H3}> Comp 1 </Text>
     </SafeAreaView>
   );
 }
+
+function Comp2() {
+  return (
+    <SafeAreaView>
+      <Text style={Style.H3}> Comp 2 </Text>
+    </SafeAreaView>
+  );
+}
+
+export {Comp1, Comp2};
+export default Comp;

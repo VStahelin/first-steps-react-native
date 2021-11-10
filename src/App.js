@@ -1,14 +1,23 @@
 import React from 'react';
-import {SafeAreaView, Text} from 'react-native';
+import {SafeAreaView, StyleSheet} from 'react-native';
 
 import Componente from './components/Primeiro';
-import X, {Comp1, Comp2} from './components/Multi'
+import X, {Comp1, Comp2} from './components/Multi';
 
 export default () => (
-  <SafeAreaView>
-    <Componente></Componente>
-    <X></X>
-    <Comp1></Comp1>
-    <Comp2></Comp2>
+  <SafeAreaView style={style.App}>
+    <Componente />
+    <X />
+    <Comp1 />
+    <Comp2 />
   </SafeAreaView>
 );
+
+const style = StyleSheet.create({
+  App: {
+    flexGrow: 1,
+    backgroundColor: 'lightblue',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+});
