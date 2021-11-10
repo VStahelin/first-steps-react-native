@@ -1,6 +1,6 @@
 import React from 'react';
 import {SafeAreaView, Text} from 'react-native';
-import Style from './style';
+import Style from './styles';
 
 function Comp() {
   return (
