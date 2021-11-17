@@ -7,13 +7,15 @@ import {SafeAreaView, StyleSheet} from 'react-native';
 //import NumRandon from './components/NumRandon';
 //import Title from './components/Title';
 //import Button from './components/Button';
+//import Counter from './components/Counter';
 
-import Counter from './components/Counter';
+import Fther from './components/indirect/Fther';
 
 export default () => (
   <SafeAreaView style={style.App}>
-    <Counter initial={10} />
+    <Fther />
     {/*
+    <Counter initial={10} />
     <Button/>
     <Title title="THE BIG TITLE" subtitle="Little subtitle" />
     <MinMax n1={NumRandon()} n2={NumRandon()} />
