@@ -1,10 +1,18 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Son from './Son';
+import {Text} from 'react-native';
 
 export default props => {
+  const [num, setNum] = useState(0);
+
   function showValue(number) {
-    console.warn(number);
+    setNum(number);
   }
 
-  return <Son min={10} max={100} function={showValue} />;
+  return (
+    <>
+      <Text>{num}</Text>
+      <Son min={10} max={100} function={showValue} />
+    </>
+  );
 };
