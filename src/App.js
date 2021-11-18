@@ -9,12 +9,14 @@ import {SafeAreaView, StyleSheet} from 'react-native';
 //import Button from './components/Button';
 //import Counter from './components/Counter';
 // import Fther from './components/indirect/Fther';
-import OSCheck from './components/OSCheck';
+// import OSCheck from './components/OSCheck';
+import ConditionalRender from './components/ConditionalRender';
 
 export default () => (
   <SafeAreaView style={style.App}>
-    <OSCheck />
+    <ConditionalRender num={3} />
     {/*
+    <OSCheck />
     <Fther />
     <Counter initial={10} />
     <Button/>
