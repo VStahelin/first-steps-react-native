@@ -8,13 +8,14 @@ import {SafeAreaView, StyleSheet} from 'react-native';
 //import Title from './components/Title';
 //import Button from './components/Button';
 //import Counter from './components/Counter';
-
-import Fther from './components/indirect/Fther';
+// import Fther from './components/indirect/Fther';
+import OSCheck from './components/OSCheck';
 
 export default () => (
   <SafeAreaView style={style.App}>
-    <Fther />
+    <OSCheck />
     {/*
+    <Fther />
     <Counter initial={10} />
     <Button/>
     <Title title="THE BIG TITLE" subtitle="Little subtitle" />
