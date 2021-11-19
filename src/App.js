@@ -11,11 +11,21 @@ import {SafeAreaView, StyleSheet} from 'react-native';
 // import Fther from './components/indirect/Fther';
 // import OSCheck from './components/OSCheck';
 //import ConditionalRender from './components/ConditionalRender';
-import Family from './components/PropsChildren/Family';
-import Member from './components/PropsChildren/Member';
+// import Family from './components/PropsChildren/Family';
+// import Member from './components/PropsChildren/Member';
+
+import LogedUsers from './components/LogedUsers';
 
 export default () => (
   <SafeAreaView style={style.App}>
+    <LogedUsers user={{username: 'joao', email: 'jao@email.com'}} />
+    <LogedUsers user={{username: 'vitor', email: 'vitor@email.com'}} />
+    <LogedUsers user={{username: 'vitor'}} />
+    <LogedUsers user={{email: 'vitor@email.com'}} />
+    <LogedUsers user={null} />
+    <LogedUsers user={{}} />
+
+    {/*
     <Family>
       <Member name="Arthur" />
       <Member name="Samuel" />
@@ -23,8 +33,6 @@ export default () => (
       <Member name="Rafa" />
       <Member name="Italo" />
     </Family>
-
-    {/*
     <ConditionalRender num={3} />
     <OSCheck />
     <Fther />
