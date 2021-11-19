@@ -10,12 +10,22 @@ import {SafeAreaView, StyleSheet} from 'react-native';
 //import Counter from './components/Counter';
 // import Fther from './components/indirect/Fther';
 // import OSCheck from './components/OSCheck';
-import ConditionalRender from './components/ConditionalRender';
+//import ConditionalRender from './components/ConditionalRender';
+import Family from './components/PropsChildren/Family';
+import Member from './components/PropsChildren/Member';
 
 export default () => (
   <SafeAreaView style={style.App}>
-    <ConditionalRender num={3} />
+    <Family>
+      <Member name="Arthur" />
+      <Member name="Samuel" />
+      <Member name="Gabriel" />
+      <Member name="Rafa" />
+      <Member name="Italo" />
+    </Family>
+
     {/*
+    <ConditionalRender num={3} />
     <OSCheck />
     <Fther />
     <Counter initial={10} />
